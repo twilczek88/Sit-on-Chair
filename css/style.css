@@ -1,0 +1,116 @@
+/*################################*/
+/*##### main layout elements #####*/
+/*################################*/
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 1056px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*########## header #########*/
+/*##### header elements #####*/
+/*###########################*/
+header {
+    background: #000;
+    color: #fff;
+}
+
+h1 {
+    float: left;
+    color: white;
+
+    padding: 10px 0;
+}
+
+h1 span {
+    color: cyan;
+    font-weight: 900;
+}
+
+/*########### header ############*/
+/*##### navigation elements #####*/
+/*###############################*/
+@keyframes dropdown {
+    from {
+        top: -170px;
+        background: transparent;
+        color: transparent;
+        z-index: -1;
+    }
+    to {
+        top: 45px;
+        background: black;
+        color: white;
+        z-index: -1;
+    }
+}
+
+nav {
+    float: right;
+}
+
+.menu {
+    /*position: relative;*/
+    /* strona działa dobrze i bez tego ¯\_(ツ)_/¯ */
+    text-align: center;
+}
+
+.menu>li {
+    float:left;
+    width: 125px;
+    padding: 10px 0;
+}
+
+.menu>li:last-child {
+    border: none;
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+
+    line-height: 28px;
+    width: 125px;
+    top: 60px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/*triangle*/
+.submenu::before {
+    content:"";
+    position: absolute;
+    right: 36%;
+    top: -30px;
+
+    border-bottom: 15px solid black;
+    border-top: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+}
+
+/* transparent hover box */
+.submenu::after {
+    content:"";
+    position: absolute;
+    background: transparent;
+    right:0;
+    top: -45px;
+    width: 125px;
+    height: 50px;
+
+}
+
+li:hover > .submenu {
+    display: block;
+    animation: dropdown 0.15s;
+}
