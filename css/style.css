@@ -213,12 +213,13 @@ float: left;
 /*################ artbox ################*/
 /*##### Highlighted articles section #####*/
 /*########################################*/
-/*.artbox, .ribbon {
-    height: 500px;
-}*/
+
+section.artbox {
+    padding: 50px;
+}
 
 .row {
-    margin: 25px auto;
+    margin: 10px auto;
 }
 
 .col-3.artbox {
@@ -236,11 +237,10 @@ float: left;
 
 .col-3.artbox div {
     position: absolute;
+    bottom: 25px;
     background: rgba(255, 255, 255, 0.5);
     width: 300px;
     padding: 25px;
-
-    bottom:25px;
 }
 
 .col-3.artbox div>h2 {
@@ -269,5 +269,127 @@ float: left;
 
 #thirdArtboxArticle {
     background: url("");
-
 }
+
+/*##### PRICEBOX #####*/
+/*##### PRICEBOX #####*/
+/*####################*/
+
+section.prices {
+    background:#e7e7e7;
+    padding: 20px;
+}
+
+.prices h2 {
+    font-size: 24px;
+    border-bottom: 5px solid #3dbebe;
+    margin-right: 750px;
+}
+
+.pricebox {
+    position: relative;
+    margin-top: 50px;
+    height: 450px;
+    background: #FFF;
+    border: solid 2px lightgray;
+}
+
+.pricebox:last-child {
+    margin-right: 0;
+}
+
+.circle {
+    position: absolute;
+    top: -37.5px;
+    left: 112.5px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #FFF;
+    border: solid 2px lightgray;
+}
+
+.dot {
+    position: absolute;
+    top: -20px;
+    left:130px;
+    /*left: 129.5px;*/
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: lightgray;
+}
+
+.pricebox>.artContent {
+    margin-top: 47.5px;
+}
+
+.pricebox>.artContent h3 {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+}
+
+.artContent>.circle {
+    width: 100px;
+    height: 100px;
+    top:90px;
+    left: 100px;
+    border-radius: 50%;
+    background: white;
+    border: solid 2px #3dbebe;
+
+    text-align: center;
+    color:gray;
+}
+
+.artContent>.circle>h4 {
+    margin-top:20px;
+    font-size:32px;
+    font-weight: 900;
+    padding-right: 10px;
+}
+
+.artContent>.circle>h4>span {
+    display:inline-block;
+    font-size: 14px;
+    position: absolute;
+}
+
+.artContent>.circle>p {
+    margin-top:;
+    font-size:14px;
+}
+
+.pricePlan {
+    margin-top: 140px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 22px;
+    background: #f0f0f0;
+    color: gray;
+}
+
+.pricePlan>p:nth-child(2n+1) {
+    background: #e0e0e0;
+    color: gray;
+}
+
+.pricebox a {
+    display: block;
+    position: absolute;
+    background: #3dbebe;
+
+    width: 150px;
+    left: 70px;
+    top: 350px;
+    margin-top: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+/*#######################*/
+/*##### CONTACT BOX #####*/
+/*#######################*/
