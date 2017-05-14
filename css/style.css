@@ -44,6 +44,7 @@ section h2 {
 /*##### header elements #####*/
 /*###########################*/
 header {
+    line-height: 30px;
     background: #000;
     color: #fff;
 }
@@ -51,7 +52,6 @@ header {
 header h1 {
     float: left;
     color: #fff;
-    padding: 5px 0;        /* !! */
     padding-left: 25px;
 }
 
@@ -85,12 +85,9 @@ nav {
     text-align: center;
 }
 
-.menu>li {
+.menu>li, .menu a {
     float:left;
     width: 125px;
-    padding: 5px 0;    /* !! */
-    font-weight: 700;
-
 }
 
 .submenu {
@@ -101,7 +98,6 @@ nav {
     top: 60px;
     padding: 10px;
     background-color: #000;
-    /*border-radius: 5px; /* 0 - 10px */ */
 }
 
 /*triangle*/
@@ -153,12 +149,12 @@ li:hover > .submenu {
 #leftArrow, #rightArrow {
 float: left;
 width: 132px;
-height: 450px;
-padding-top: 225px;
+height: 410px;
+/*padding-top: 225px;*/
 
 color: #3dbebe;
 font-size: 100px;
-line-height: 0;
+line-height: 410px;
 
 }
 
@@ -179,12 +175,12 @@ float: left;
     background-size: cover;
     float: left;
     width: 392px;
-    height: 450px;
+    height: 410px;
 }
 
 #firstRibbonArticle .artContent {
     width: 392px;
-    height: 450px ;
+    height: 410px ;
     text-align: center;
 }
 
@@ -215,17 +211,9 @@ float: left;
     background: #3dbebe;
 }
 
-#firstRibbonArticle .artContent a:hover {
-
-}
-
 /*################ artbox ################*/
 /*##### Highlighted articles section #####*/
 /*########################################*/
-
-section.artbox {
-    padding: 50px;
-}
 
 .row {
     margin: 10px auto;
@@ -269,9 +257,6 @@ section.artbox {
     line-height: 150%;
 }
 
-.col-3.artbox:last-child div {
-}
-
 
 #firstArtboxArticle {
     background: url("../img/box1_img.jpg");
@@ -291,7 +276,6 @@ section.artbox {
 
 section.prices {
     background:#e7e7e7;
-    padding: 20px;
 }
 
 .pricebox {
@@ -323,7 +307,6 @@ section.prices {
     position: absolute;
     top: -20px;
     left:130px;
-    /*left: 129.5px;*/
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -346,32 +329,31 @@ section.prices {
 .artContent>.circle {
     width: 100px;
     height: 100px;
-    top:90px;
+    top: 90px;
     left: 100px;
     border-radius: 50%;
     background: white;
     border: solid 2px gray;
 
     text-align: center;
-    color:gray;
+    color: gray;
 }
 
 .artContent>.circle>h4 {
-    margin-top:20px;
-    font-size:32px;
+    margin-top: 20px;
+    font-size: 32px;
     font-weight: 900;
     padding-right: 10px;
 }
 
 .artContent>.circle>h4>span {
-    display:inline-block;
+    display: inline-block;
     font-size: 14px;
     position: absolute;
 }
 
 .artContent>.circle>p {
-    margin-top:;
-    font-size:14px;
+    font-size: 14px;
 }
 
 .pricePlan {
