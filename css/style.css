@@ -449,3 +449,53 @@ section.prices {
 /*##################*/
 /*##### FOOTER #####*/
 /*##################*/
+footer {
+    color: gray;
+    height:40px;
+    line-height: 40px;
+
+}
+
+.logoGray {
+    float: right;
+    text-align: right;
+    width: 150px;
+    word-spacing: 0.1rem;
+}
+
+.logoGray span {
+    font-weight: bolder;
+}
+
+.copyright {
+    width: 700px;
+    float: left;
+}
+
+.link {
+    float: left;
+    background: center, no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+}
+
+.fr {
+    background: url("../img/flickr.png") center no-repeat;
+}
+
+.vimeo {
+    background: url("../img/vimeo.png") center no-repeat;
+}
+
+.pinterest {
+    background: url("../img/pinterest.png") center no-repeat;
+}
+
+.twitter {
+    background: url("../img/twitter.png") center no-repeat;
+}
+
+.vimeo {
+
+}
