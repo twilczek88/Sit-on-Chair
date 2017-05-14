@@ -302,6 +302,8 @@ section.prices {
     border: solid 2px lightgray;
 }
 
+
+
 .pricebox:last-child {
     margin-right: 0;
 }
@@ -335,8 +337,9 @@ section.prices {
 .pricebox>.artContent h3 {
     position: relative;
     text-align: center;
+    color: #3dbebe;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.3rem;
 }
 
@@ -347,7 +350,7 @@ section.prices {
     left: 100px;
     border-radius: 50%;
     background: white;
-    border: solid 2px #3dbebe;
+    border: solid 2px gray;
 
     text-align: center;
     color:gray;
@@ -398,6 +401,25 @@ section.prices {
     padding: 10px;
 }
 
+.pricebox:hover, .pricebox:hover>.circle {
+    background: #3dbebe;
+    border-color: #3dbebe;
+}
+
+.pricebox:hover>.artContent>.circle {
+    color:#3dbebe;
+    border-color: #3dbebe;
+}
+
+.pricebox:hover>.dot, .pricebox:hover a {
+    background-color: #FFF;
+    color: #3dbebe;
+}
+
+.pricebox:hover .artContent h3 {
+    color: white;
+}
+
 /*#######################*/
 /*##### CONTACT BOX #####*/
 /*#######################*/
@@ -410,13 +432,20 @@ section.prices {
     padding: 25px;
     padding-left: 0;
 }
-
 .left div * {
     display: block;
     height: 50px;
     width: 100%;
     margin-bottom: 25px;
     padding-left: 10px;
+}
+
+.left input, .left textarea {
+    border: solid 3px lightgray;
+}
+
+.left input:focus, .left textarea:focus {
+    border: solid 3px #3dbebe;
 }
 
 .left textarea {
@@ -439,8 +468,25 @@ section.prices {
     background-size: contain;
 }
 
-.right form * {
-    margin: 25px 0;
+.agreecheck {
+    display: block;
+    float: left;
+    padding: 78px 0;
+    margin: 0;
+
+}
+
+.agreecheck p {
+    float: right;
+    font-size: 22px;
+    width: 85%;
+    line-height: 100%;
+}
+
+.agreecheck [type="checkbox"] {
+    display: block;
+    width: 42px;
+    height: 42px;
 }
 
 .right .submit {
@@ -485,6 +531,8 @@ footer {
     float: left;
 }
 
+
+/* social media links */
 .link {
     float: left;
     background: center, no-repeat;
