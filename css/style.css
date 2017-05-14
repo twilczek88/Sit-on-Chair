@@ -10,9 +10,24 @@ body {
     margin: 0 auto;
 }
 
+/* rows and columns */
+.row {
+}
+
+[class|="col"] {
+    float: left;
+    background: black;
+}
+
+.col-3 {
+    width: 300px;
+    margin-right: 78px;
+}
+
+/* links */
 a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
 /*########## header #########*/
@@ -23,16 +38,16 @@ header {
     color: #fff;
 }
 
-h1 {
+header h1 {
     float: left;
-    color: white;
-
-    padding: 10px 0;
+    color: #fff;
+    padding: 5px 0;        /* !! */
+    padding-left: 25px;
 }
 
 h1 span {
-    color: cyan;
-    font-weight: 900;
+    color: #3dbebe;
+    font-weight: 800;
 }
 
 /*########### header ############*/
@@ -43,13 +58,12 @@ h1 span {
         top: -170px;
         background: transparent;
         color: transparent;
-        z-index: -1;
+        z-index: 0;
     }
     to {
         top: 45px;
-        background: black;
-        color: white;
-        z-index: -1;
+        background: #000;
+        color: #fff;
     }
 }
 
@@ -58,31 +72,26 @@ nav {
 }
 
 .menu {
-    /*position: relative;*/
-    /* strona działa dobrze i bez tego ¯\_(ツ)_/¯ */
     text-align: center;
 }
 
 .menu>li {
     float:left;
     width: 125px;
-    padding: 10px 0;
-}
+    padding: 5px 0;    /* !! */
+    font-weight: 700;
 
-.menu>li:last-child {
-    border: none;
 }
 
 .submenu {
     position: absolute;
     display: none;
-
     line-height: 28px;
     width: 125px;
     top: 60px;
     padding: 10px;
-    background-color: black;
-    border-radius: 10px;
+    background-color: #000;
+    /*border-radius: 5px; /* 0 - 10px */ */
 }
 
 /*triangle*/
@@ -92,7 +101,7 @@ nav {
     right: 36%;
     top: -30px;
 
-    border-bottom: 15px solid black;
+    border-bottom: 15px solid #000;
     border-top: 15px solid transparent;
     border-right: 15px solid transparent;
     border-left: 15px solid transparent;
@@ -107,10 +116,93 @@ nav {
     top: -45px;
     width: 125px;
     height: 50px;
-
 }
 
 li:hover > .submenu {
     display: block;
     animation: dropdown 0.15s;
 }
+
+/*########## ribbon ###########*/
+/*##### Ribbon slide menu #####*/
+/*#############################*/
+.ribbon {
+    height: 450px;
+
+    /*gradient*/
+    background: #CED6D6; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#FFF, #CED6D6);
+    background: -o-linear-gradient(#FFF, #CED6D6);
+    background: linear-gradient(#FFF #CED6D6) /* For Safari 5.1 to 6.0 */ /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */ /* Standard syntax */
+}
+
+.ribbon div:not([class*="container"]) {
+    float: left;
+}
+
+#leftArrow, #rightArrow {
+float: left;
+width: 132px;
+height: 450px;
+padding-top: 225px;
+text-align: center;
+color: #3dbebe;
+font-size: 100px;
+line-height: 0;
+/*font-weight: 800;*/
+
+}
+
+.ribbon article {
+float: left;
+}
+
+#firstRibbonArticle .picture {
+    background: url("../img/black_chair.png") no-repeat center;
+    background-size: cover;
+    float: left;
+    width: 392px;
+    height: 450px;
+}
+
+#firstRibbonArticle .artContent {
+    width: 392px;
+    height: 450px ;
+    text-align: center;
+}
+
+#firstRibbonArticle .artContent h1 {
+    width: 100%;
+    margin-top: 75px;
+
+    color: #000;
+    font-size: 36px;
+}
+
+#firstRibbonArticle .artContent h1 span {
+    font-weight: 800;
+    color: #3dbebe;
+}
+
+
+#firstRibbonArticle .artContent h1 + p {
+    margin-top: 30px;
+    font-weight: 200;
+}
+
+#firstRibbonArticle .artContent a {
+    display: block;
+    width: 175px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: #3dbebe;
+}
+
+#firstRibbonArticle .artContent a:hover {
+
+}
+
+/*################ artbox ################*/
+/*##### Highlighted articles section #####*/
+/*########################################*/
