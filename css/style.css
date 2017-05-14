@@ -30,6 +30,16 @@ a {
     color: #fff;
 }
 
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 24px;
+    border-bottom: 5px solid #3dbebe;
+    margin-right: 750px;
+}
+
 /*########## header #########*/
 /*##### header elements #####*/
 /*###########################*/
@@ -191,7 +201,6 @@ float: left;
     color: #3dbebe;
 }
 
-
 #firstRibbonArticle .artContent h1 + p {
     margin-top: 30px;
     font-weight: 200;
@@ -250,6 +259,11 @@ section.artbox {
     border-bottom: 5px solid #3dbebe;
 }
 
+.col-3.artbox h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .col-3.artbox div>p {
     padding: 0;
     line-height: 150%;
@@ -278,12 +292,6 @@ section.artbox {
 section.prices {
     background:#e7e7e7;
     padding: 20px;
-}
-
-.prices h2 {
-    font-size: 24px;
-    border-bottom: 5px solid #3dbebe;
-    margin-right: 750px;
 }
 
 .pricebox {
@@ -393,3 +401,51 @@ section.prices {
 /*#######################*/
 /*##### CONTACT BOX #####*/
 /*#######################*/
+.contactbox {
+
+}
+
+.left {
+    float: left;
+    font-size: 24px;
+    width: 60%;
+    height: 500px;
+    padding: 25px;
+    padding-left: 0;
+}
+
+.left div * {
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.left textarea {
+    resize: none;
+    height: 325px;
+    padding: 10px;
+}
+
+.right {
+    float: left;
+    width: 40%;
+    height: 500px;
+}
+
+.right .picture {
+    margin-top: 25px;
+    width: 100%;
+    height: 200px;
+    background: url("../img/red_chair.png") no-repeat center;
+    background-size: contain;
+}
+
+.right .artContent {
+
+}
+
+/*##################*/
+/*##### FOOTER #####*/
+/*##################*/
