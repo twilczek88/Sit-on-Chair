@@ -46,7 +46,7 @@ header h1 {
 }
 
 h1 span {
-    color: #3dbebe;
+    color: #0ff;
     font-weight: 800;
 }
 
@@ -145,12 +145,19 @@ float: left;
 width: 132px;
 height: 450px;
 padding-top: 225px;
-text-align: center;
+
 color: #3dbebe;
 font-size: 100px;
 line-height: 0;
-/*font-weight: 800;*/
 
+}
+
+#leftArrow {
+    text-align: left;
+}
+
+#rightArrow {
+    text-align: right;
 }
 
 .ribbon article {
@@ -206,3 +213,61 @@ float: left;
 /*################ artbox ################*/
 /*##### Highlighted articles section #####*/
 /*########################################*/
+/*.artbox, .ribbon {
+    height: 500px;
+}*/
+
+.row {
+    margin: 25px auto;
+}
+
+.col-3.artbox {
+    position: relative;
+    background: green ;
+    height: 225px;
+}
+
+.col-3.artbox:last-child {
+    margin-right: 0;
+    height: 272.5px;
+    border: 1px solid lightgray;
+
+}
+
+.col-3.artbox div {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    width: 300px;
+    padding: 25px;
+
+    bottom:25px;
+}
+
+.col-3.artbox div>h2 {
+    display: block;
+    margin-right: 100px;
+    margin-bottom: 25px;
+    border-bottom: 5px solid #3dbebe;
+}
+
+.col-3.artbox div>p {
+    padding: 0;
+    line-height: 150%;
+}
+
+.col-3.artbox:last-child div {
+}
+
+
+#firstArtboxArticle {
+    background: url("../img/box1_img.jpg");
+}
+
+#secondArtboxArticle {
+    background: url("../img/box2_img.jpg");
+}
+
+#thirdArtboxArticle {
+    background: url("");
+
+}
