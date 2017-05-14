@@ -401,9 +401,6 @@ section.prices {
 /*#######################*/
 /*##### CONTACT BOX #####*/
 /*#######################*/
-.contactbox {
-
-}
 
 .left {
     float: left;
@@ -429,7 +426,7 @@ section.prices {
 }
 
 .right {
-    float: left;
+    float: right;
     width: 40%;
     height: 500px;
 }
@@ -442,8 +439,23 @@ section.prices {
     background-size: contain;
 }
 
-.right .artContent {
+.right form * {
+    margin: 25px 0;
+}
 
+.right .submit {
+    margin-top: 25px;
+}
+
+.right [type="checkbox"] {
+    margin: 0;
+}
+
+.right [type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0 25px;
+    height: 75px;
 }
 
 /*##################*/
@@ -453,6 +465,7 @@ footer {
     color: gray;
     height:40px;
     line-height: 40px;
+    margin-bottom: 20px;
 
 }
 
@@ -480,7 +493,7 @@ footer {
     width: 40px;
 }
 
-.fr {
+.flickr {
     background: url("../img/flickr.png") center no-repeat;
 }
 
@@ -494,8 +507,4 @@ footer {
 
 .twitter {
     background: url("../img/twitter.png") center no-repeat;
-}
-
-.vimeo {
-
 }
