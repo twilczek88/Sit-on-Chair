@@ -85,7 +85,7 @@ nav {
     text-align: center;
 }
 
-.menu>li, .menu a {
+.menu>li, .menu>a {
     float:left;
     width: 125px;
 }
@@ -455,14 +455,14 @@ section.prices {
     float: left;
     padding: 78px 0;
     margin: 0;
-
 }
 
 .agreecheck p {
     float: right;
     font-size: 22px;
     width: 85%;
-    line-height: 100%;
+    line-height: 24px;
+    vertical-align: text-top;
 }
 
 .agreecheck [type="checkbox"] {
@@ -484,6 +484,10 @@ section.prices {
     width: 100%;
     padding: 0 25px;
     height: 75px;
+    border: none;
+    font-size: 28px;
+    color: white;
+    background: #3dbebe;
 }
 
 /*##################*/
